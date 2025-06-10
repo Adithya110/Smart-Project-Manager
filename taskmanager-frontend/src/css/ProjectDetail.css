@@ -1,0 +1,91 @@
+.project-details-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.project-header {
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.project-header h2 {
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.project-header p {
+  color: #555;
+  font-size: 16px;
+}
+
+.task-section h3 {
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.task-card {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-left: 6px solid #3498db;
+  border-radius: 10px;
+  padding: 15px;
+  width: calc(50% - 8px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h4 {
+  margin: 0 0 8px;
+  color: #2c3e50;
+}
+
+.task-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.loading,
+.error,
+.no-tasks {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+}
+.task-card button {
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #3498db; /* matching the blue accent */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  align-self: flex-start; /* align left inside the card */
+  display: inline-block;
+}
+
+.task-card button:hover {
+  background-color: #2980b9; /* darker blue on hover */
+  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.7);
+}

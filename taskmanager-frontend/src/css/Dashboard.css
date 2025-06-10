@@ -1,0 +1,99 @@
+/* Container for the whole dashboard */
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.dashboard-container h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* + Create Project button */
+.create-project-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-project-button:hover {
+  background-color: #218838;
+}
+
+/* Grid layout for cards */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Project card */
+.dashboard-card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Project title */
+.dashboard-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* General button styles inside card */
+.dashboard-card button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+/* View button (default) */
+.dashboard-card .view-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.dashboard-card .view-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add Task button */
+.dashboard-card .add-task-button {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.dashboard-card .add-task-button:hover {
+  background-color: #e0a800;
+}
+
+/* Delete button */
+.dashboard-card .delete-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.dashboard-card .delete-button:hover {
+  background-color: #c0392b;
+}
