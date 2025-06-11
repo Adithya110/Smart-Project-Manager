@@ -16,8 +16,7 @@ public class Project {
     @OneToMany(mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Task> tasks;
 
-    // Later we'll link this to users and tasks
-    // But for now, keep it simple
+   
 
     // 🧠 Getters & Setters
     public Long getId() {

@@ -51,7 +51,7 @@ export default function TaskForm() {
       if (task ) {
         // UPDATE existing task (PUT or PATCH)
         await api.put(
-          `/tasks/${projectId}`,  // Assuming this is your update endpoint
+          `/tasks/${task.id}`,  
           {
             title,
             description,
