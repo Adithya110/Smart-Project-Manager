@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class JwtUtil {
 
-    // Consider moving these to application.properties
+   
     private static final String SECRET = "mysecretkeyformyapp12345678901234567890"; // >= 256 bits
     private static final long EXPIRATION_TIME = TimeUnit.DAYS.toMillis(1); // 1 day
     private static final Key key = Keys.hmacShaKeyFor(SECRET.getBytes());

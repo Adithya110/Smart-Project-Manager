@@ -11,6 +11,7 @@ const TaskUpdateListener = () => {
           message.assignedTo ? ` | Assigned to: ${message.assignedTo}` : ''
         }`
       );
+      console.log("Received task update message:", message);
     });
 
     return () => {

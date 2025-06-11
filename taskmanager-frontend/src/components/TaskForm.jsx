@@ -64,6 +64,7 @@ export default function TaskForm() {
           }
         );
         alert("Task updated successfully!");
+        
       } else {
         // CREATE new task
         await api.post(

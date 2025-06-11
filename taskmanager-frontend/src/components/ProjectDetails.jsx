@@ -55,7 +55,8 @@ export default function ProjectDetails() {
               <p>Status: {task.status}</p>
               <p>Due Date: {task.dueDate}</p>
               <p>Assigned To: {task.assignedTo ? task.assignedTo.username : 'Unassigned'}</p>
-              <button onClick={() => navigate('/create-task', { state: { projectId: project.id, projectTitle: project.title, task } })} >Edit</button>
+              <button onClick={() => {navigate('/create-task', { state: { projectId: project.id, projectTitle: project.title, task } })
+              console.log(task)}} >Edit</button>
             </li>
           ))}
         </ul>

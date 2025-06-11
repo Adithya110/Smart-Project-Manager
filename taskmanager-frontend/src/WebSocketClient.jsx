@@ -17,7 +17,9 @@ export const connectToWebSocket = (onMessageReceived) => {
       stompClient.subscribe('/topic/task-updates', (message) => {
         const body = JSON.parse(message.body);
         onMessageReceived(body);
+        console.log(body)
       });
+      
     },
     onStompError: (frame) => {
       console.error('WebSocket error:', frame.headers['message']);

@@ -13,7 +13,7 @@ public class TaskUpdateController {
     @MessageMapping("/task/update")
     @SendTo("/topic/task")
     public TaskUpdateMessage sendTaskUpdate(TaskUpdateMessage task) throws Exception {
-        // You can add business logic here, e.g., save update in DB
+        
         return task;
     }
 }
