@@ -17,7 +17,7 @@ export const connectToWebSocket = (onMessageReceived) => {
       stompClient.subscribe('/topic/task-updates', (message) => {
         const body = JSON.parse(message.body);
         onMessageReceived(body);
-        console.log(body)
+        
       });
       
     },

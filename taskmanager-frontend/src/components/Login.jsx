@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
-import '../css/Login.css'; // ✅ Import the CSS
+import '../css/Login.css'; // 
 
 export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate();
+
 
   const loginUser = async (e) => {
     e.preventDefault();
@@ -15,7 +14,7 @@ export default function Login() {
       const token = response.data;
       localStorage.setItem('token', token);
       alert("Login Successful");
-      navigate('/dashboard');
+      window.location.href='/dashboard';
     } catch (err) {
       console.error(err);
       alert('Login failed');
