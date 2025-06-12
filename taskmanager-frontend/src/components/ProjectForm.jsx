@@ -22,7 +22,7 @@ export default function CreateProject() {
       );
       
       alert('Project created successfully!')
-      navigate('/dashboard'); // Navigate to dashboard after success
+      navigate('/dashboard'); 
     } catch (error) {
       console.error('Error creating project:', error);
       alert('Failed to create project. Please try again.');

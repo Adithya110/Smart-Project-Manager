@@ -45,6 +45,8 @@ export default function TaskForm() {
 
   // Handler for create or update
   const handleSubmit = async () => {
+     if (!title.trim()) {
+    alert("Title is required!");}
     try {
       const token = localStorage.getItem("token");
 
@@ -106,7 +108,9 @@ export default function TaskForm() {
       <input
         value={title}
         onChange={e => setTitle(e.target.value)}
+        required
         placeholder="Title"
+        
       />
 
       <input

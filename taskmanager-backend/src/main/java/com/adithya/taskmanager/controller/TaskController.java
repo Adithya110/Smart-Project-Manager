@@ -32,6 +32,9 @@ public class TaskController {
         if (project == null) {
             return ResponseEntity.badRequest().body("Project not found");
         }
+        if (task.getTitle()==null||task.getTitle().trim().isEmpty()){
+            return ResponseEntity.badRequest().body("Title cannot be empty");
+        }
 
         task.setProject(project);
         Task savedTask = taskRepository.save(task);

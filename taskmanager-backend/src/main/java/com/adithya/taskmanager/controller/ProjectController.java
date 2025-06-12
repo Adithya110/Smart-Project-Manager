@@ -18,7 +18,11 @@ public class ProjectController {
 
     //  Create new project
     @PostMapping
-    public ResponseEntity<Project> createProject(@RequestBody Project project) {
+    public ResponseEntity<?> createProject(@RequestBody Project project) {
+        if (project.getTitle() == null || project.getTitle().trim().isEmpty()) {
+        return ResponseEntity.badRequest().body("Title cannot be empty");
+    }
+
         Project savedProject = projectRepository.save(project);
         return ResponseEntity.ok(savedProject);
     }

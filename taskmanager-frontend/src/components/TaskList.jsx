@@ -27,7 +27,7 @@ export default function TaskList() {
         stompClient.deactivate();
       }
     };
-  }, []); // Dependency array
+  }, []); 
 
   return (
     <div>
